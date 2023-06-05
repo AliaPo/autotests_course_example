@@ -28,7 +28,7 @@ class Trigon:
         for one_side in self.sides:
             if type(one_side) != int:
                 raise TypeError('Стороны должны быть числами')
-            if one_side < 0 or one_side == 0:
+            if one_side <= 0:
                 raise ValueError('Стороны должны быть положительными')
 
         if len(self.sides) != 3:
